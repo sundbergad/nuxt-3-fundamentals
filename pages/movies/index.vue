@@ -1,15 +1,9 @@
-<script lang="ts" setup>
-const query = ref("");
-function search(){
-    @fetch()
-}
+<script setup>
+    import MovieSearch from '~/components/MovieSearch.vue';
 </script>
 
 <template>
-    <form @submit.prevent="search">
-        <input type="text" v-model="query">
-        <button>Search</button>
-    </form>
+    <div>
+        <MovieSearch />
+    </div>
 </template>
-
-<style scoped></style>
